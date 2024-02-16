@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})" >
+	<head>
+		<meta charset="UTF-8"/>
+		<title > this is the about page</title>
+		
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+<section>
+
+<div id="login" >
+         <div class="container " style="margin-top: -4%">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                       
+                     <!--   Email form -->
+             <h3 class="text-center text-white pt-5">Your Register Email</h3>
+      <form action="" th:action="@{/send-otp}" method="post">
+      <div class="form-group">
+      <input type="email" placeholder="Enter your email" class="form-control" required="required"/>
+      
+      <div>  
+      <div class="container">
+      <button class="btn btn-warning"> Send OTP</button>
+      </div>
+      </div>
+      </div>
+      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
